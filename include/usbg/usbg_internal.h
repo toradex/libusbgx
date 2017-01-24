@@ -401,6 +401,12 @@ int usbg_set_config_node_string(config_setting_t *root,
 int usbg_set_config_node_ether_addr(config_setting_t *root,
 					      const char *node_name, void *val);
 
+int usbg_get_config_node_os_desc(config_setting_t *root, const char *iname,
+					usbg_function_os_desc *f_os_desc);
+
+int usbg_set_config_node_os_desc(config_setting_t *root, const char *iname,
+					const usbg_function_os_desc *f_os_desc);
+
 #ifdef __cplusplus
 }
 #endif
